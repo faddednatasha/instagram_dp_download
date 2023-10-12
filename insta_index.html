@@ -1,0 +1,24 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Profile Picture Downloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/insta_styles.css') }}">
+
+</head>
+
+<body>
+    <h1>Instagram Profile Picture Downloader</h1>
+    <label for="username">Enter Instagram username:</label>
+    <input type="text" id="username" required>
+    <button onclick="downloadProfilePic()">Download Profile Picture</button>
+    <div id="result"></div>
+
+
+    <script src="{{ url_for('static', filename='js/insta_scripts.js') }}"></script>
+</body>
+
+</html>
